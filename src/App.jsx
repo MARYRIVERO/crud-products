@@ -1,11 +1,26 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="container">
-      <h1>Hola Mundo</h1>
-    </div>
-  );
+    <Router>
+        <div className="container">
+            navbar...
+            <Switch>
+                <Route path="/" exact>
+                    Ruta de inicio
+                </Route>
+                <Route path="/login">
+                    Ruta de login
+                </Route>
+                <Route path="/admin">
+                    Ruta de administracion
+                </Route>
+            </Switch>
+        </div>
+    </Router>
+)
 }
 
-export default App;
+export default App
