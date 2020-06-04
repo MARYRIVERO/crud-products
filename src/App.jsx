@@ -29,7 +29,7 @@ const App = () => {
     return firebaseUser !== false ? (
 
         <Router>
-            <div className="container">
+            <div className="container-fluid p-2">
                 <Navbar firebaseUser={firebaseUser} />
                 <Switch>
                     <Route path="/" exact>
