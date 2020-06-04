@@ -13,12 +13,12 @@ const Navbar = (props) => {
     }
 
     return (
-        <div className='navbar navbar-dark bg-dark'>
-            <Link to="/" className="navbar-brand">AUTH</Link>
+        <div className='d-flex flex-row-reverse navbar navbar-dark bg-dark '>
+            {/* <Link to="/" className="navbar-brand">CRUD</Link> */}
             <div>
                 <div className="d-flex">
                     <NavLink
-                        className="btn btn-dark mr-2"
+                        className="btn btn-outline-info mr-2"
                         to="/"
                         exact
                     >
@@ -27,7 +27,7 @@ const Navbar = (props) => {
                     {
                         props.firebaseUser !== null ? (
                             <NavLink
-                                className="btn btn-dark mr-2"
+                                className="btn btn-outline-info mr-2"
                                 to="/admin"
                             >
                                 Admin
@@ -38,14 +38,14 @@ const Navbar = (props) => {
                     {
                         props.firebaseUser !== null ? (
                             <button
-                                className="btn btn-dark"
+                                className="btn btn-outline-info"
                                 onClick={() => cerrarSesion()}
                             >
                                 Cerrar Sesión
                             </button>
                         ) : (
                                 <NavLink
-                                    className="btn btn-dark"
+                                    className="btn btn-outline-info"
                                     to="/login"
                                 >
                                     Login

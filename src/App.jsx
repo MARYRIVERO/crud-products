@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Admin from './components/Admin';
 import { auth } from './firebase'
+import Inicio from './components/Inicio';
+
 
 
 const App = () => {
@@ -25,23 +27,24 @@ const App = () => {
     }, [])
 
     return firebaseUser !== false ? (
+
         <Router>
             <div className="container">
                 <Navbar firebaseUser={firebaseUser} />
                 <Switch>
                     <Route path="/" exact>
-                        Inicio...
+                        <Inicio />
                     </Route>
                     <Route path="/login">
                         <Login />
                     </Route>
                     <Route path="/admin">
                         <Admin />
-
                     </Route>
                 </Switch>
             </div>
         </Router>
+
     ) : (
             <p>Cargando...</p>
         )

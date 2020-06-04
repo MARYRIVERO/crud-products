@@ -3,6 +3,7 @@ import { auth, db } from '../firebase'
 import { withRouter } from 'react-router-dom';
 
 
+
 const Login = (props) => {
 
     const [email, setEmail] = React.useState('')
@@ -42,6 +43,11 @@ const Login = (props) => {
         try {
             const res = await auth.createUserWithEmailAndPassword(email, pass)
             console.log(res.user)
+
+            await db.collection(res.user.uid).add({
+                email: res.user.email,
+                uid: res.user.uid
+            })
 
             await db.collection('usuarios').doc(res.user.uid).set({
                 email: res.user.email,
@@ -89,8 +95,8 @@ const Login = (props) => {
     }, [email, pass, props.history])
 
     return (
-        <div className="mt-5">
-            <h3 className="text-center">
+        <div className="mt-2">
+            <h3 className="align-baseline text-center">
                 {
                     esRegistro ? 'Registro' : 'Login'
                 }
