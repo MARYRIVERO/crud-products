@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crud-products/static/css/main.314f0b6e.chunk.css",
+    "main.js": "/crud-products/static/js/main.48569f7b.chunk.js",
+    "main.js.map": "/crud-products/static/js/main.48569f7b.chunk.js.map",
+    "runtime-main.js": "/crud-products/static/js/runtime-main.5e061587.js",
+    "runtime-main.js.map": "/crud-products/static/js/runtime-main.5e061587.js.map",
+    "static/js/2.913d42a3.chunk.js": "/crud-products/static/js/2.913d42a3.chunk.js",
+    "static/js/2.913d42a3.chunk.js.map": "/crud-products/static/js/2.913d42a3.chunk.js.map",
+    "index.html": "/crud-products/index.html",
+    "precache-manifest.fb755974b7ba4b4c39e0f621e2d1bc12.js": "/crud-products/precache-manifest.fb755974b7ba4b4c39e0f621e2d1bc12.js",
+    "service-worker.js": "/crud-products/service-worker.js",
+    "static/css/main.314f0b6e.chunk.css.map": "/crud-products/static/css/main.314f0b6e.chunk.css.map",
+    "static/js/2.913d42a3.chunk.js.LICENSE.txt": "/crud-products/static/js/2.913d42a3.chunk.js.LICENSE.txt",
+    "static/media/inicio.css": "/crud-products/static/media/fondo-tecnologico2.8e121841.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e061587.js",
+    "static/js/2.913d42a3.chunk.js",
+    "static/css/main.314f0b6e.chunk.css",
+    "static/js/main.48569f7b.chunk.js"
+  ]
+}
